@@ -1,0 +1,44 @@
+DS3 Enemy Database Builder v7.0-reference-composer
+========================================================================
+Game root: D:\steam\steamapps\common\DARK SOULS III\Game
+EnemyTables: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables
+Input MSB source: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables\all_enemies.source.json
+MSB source mode: all_enemies.source.json (SHA256 exacto)
+Reference index: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables\ds3_reference_index.json
+Data0 original index: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables\data0_original.json
+Output: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables\all_enemies.json
+
+SNAPSHOT
+  all_enemies SHA256: 7a65c638b86ad416b2f645d3719449c0fdbe1741dcdc04941495cc6ed2c4d2f6
+  all_enemies expected SHA256: 7a65c638b86ad416b2f645d3719449c0fdbe1741dcdc04941495cc6ed2c4d2f6
+  Data0 SHA256: 955016ab940f0e3526b7ef9e29cff7b498e032939023b50b5d5a172832582b87
+
+BUILD
+  enemy_count: 2947
+  npc_resolved: 2798
+  npc_missing: 149
+  think_resolved: 2712
+  think_missing: 235
+  itemlot_resolved: 2119
+  itemlot_missing: 1
+  drop_tables: 2119
+  drop_slots: 16952
+
+VALIDATION
+  output_records: 2947
+  npc_objects_checked: 2798
+  think_objects_checked: 2712
+  itemlot_tables_checked: 2119
+
+REFERENCE STATUS
+  enemy_count: 2947
+  npc_param_refs: 2798
+  npc_param_missing_reference_count: 130
+  think_param_refs: 2712
+  think_param_missing_reference_count: 86
+  itemlot_missing_reference_count: 1
+
+NOTA
+  Los 'Null - error' que correspondan a IDs presentes en las listas de
+  referencias faltantes son dependencias reales ausentes del snapshot;
+  no se convierten en datos inventados.

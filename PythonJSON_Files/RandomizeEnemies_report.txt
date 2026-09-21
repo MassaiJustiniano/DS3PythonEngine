@@ -1,0 +1,63 @@
+DS3 Enemy Randomizer v2
+==============================================================================
+Game: D:\steam\steamapps\common\DARK SOULS III\Game
+Mod: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod
+EnemyTables: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables
+Source JSON: D:\steam\steamapps\common\DARK SOULS III\Game\ModEngine-2.1.0.0-win64\mod\MiMod\EnemyTables\all_enemies_complete.json
+Source mode: all_enemies_complete.json
+Source SHA256: 90830556fdc856c2b98b658f6ea0f3ff64f75ce2806970344f7052cef0ce5ff7
+Mode: APPLY
+Seed: 862256995
+
+PLAN
+  input_records: 2947
+  enemy_records: 2947
+  map_count: 23
+  eligible_records: 2706
+  randomized_records: 2706
+
+MAPS
+  m30_00_00_00.msb.dcx: source=vanilla_game changes=147
+  m30_01_00_00.msb.dcx: source=vanilla_game changes=80
+  m30_02_00_00.msb.dcx: source=vanilla_game changes=27
+  m31_00_00_00.msb.dcx: source=vanilla_game changes=157
+  m31_01_00_00.msb.dcx: source=vanilla_game changes=78
+  m31_03_00_00.msb.dcx: source=vanilla_game changes=91
+  m31_08_00_00.msb.dcx: source=vanilla_game changes=53
+  m32_00_00_00.msb.dcx: source=vanilla_game changes=65
+  m33_00_00_00.msb.dcx: source=vanilla_game changes=265
+  m33_01_00_00.msb.dcx: source=vanilla_game changes=56
+  m34_01_00_00.msb.dcx: source=vanilla_game changes=82
+  m35_00_00_00.msb.dcx: source=vanilla_game changes=275
+  m36_00_00_00.msb.dcx: source=vanilla_game changes=59
+  m36_90_00_00.msb.dcx: source=vanilla_game changes=1
+  m37_00_00_00.msb.dcx: source=vanilla_game changes=183
+  m38_00_00_00.msb.dcx: source=vanilla_game changes=230
+  m39_00_00_00.msb.dcx: source=vanilla_game changes=139
+  m40_00_00_00.msb.dcx: source=vanilla_game changes=68
+  m41_00_00_00.msb.dcx: source=vanilla_game changes=3
+  m45_00_00_00.msb.dcx: source=vanilla_game changes=288
+  m50_00_00_00.msb.dcx: source=vanilla_game changes=184
+  m51_00_00_00.msb.dcx: source=vanilla_game changes=172
+  m51_01_00_00.msb.dcx: source=vanilla_game changes=3
+
+SKIPPED
+  invalid_npc: 18
+  invalid_think: 32
+  talk_id: 191
+
+WRITE POLICY
+  Output asset root: <MOD>\map\mapstudio
+  Only *.msb.dcx / *.msb maps containing enemies are processed.
+  Changed bytes per randomized Enemy Part: ModelIndex + ThinkParamID + NPCParamID.
+  Data0.bdt: untouched.
+  Data0.bhd: untouched.
+  Event: untouched.
+  Script/Talk: untouched.
+  Sfx: untouched.
+  Existing mod MSBs: used as baseline and backed up before replacement.
+
+SAFETY
+  All map structures are validated before any map is written.
+  Output is decompressed and reparsed after each write.
+  A failure triggers rollback of maps already committed in this run.
